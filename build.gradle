@@ -25,7 +25,7 @@ publishing {
 }
 
 ext {
-    springbootVer = '1.18.28'
+    springbootVer = '3.1.0'
     lombokVer = '1.18.28'
 }
 
