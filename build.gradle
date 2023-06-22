@@ -24,13 +24,20 @@ publishing {
     }
 }
 
-dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter:3.1.0'
-    implementation 'org.springframework.boot:spring-boot-gradle-plugin:3.1.0'
+ext {
+    springbootVer = '1.18.28'
+    lombokVer = '1.18.28'
+}
 
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.1.0'
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter:$springbootVer"
+
+    // Lombok
+    compileOnly "org.projectlombok:lombok:$lombokVer"
+    annotationProcessor "org.projectlombok:lombok:$lombokVer"
+    testCompileOnly "org.projectlombok:lombok:$lombokVer"
+    testAnnotationProcessor "org.projectlombok:lombok:$lombokVer"
+    testImplementation "org.springframework.boot:spring-boot-starter-test:$springbootVer"
 }
 
 tasks.named('test') {
