@@ -1,17 +1,15 @@
 package com.eden.sbcorealpha.utils;
 
-
-import lombok.extern.slf4j.Slf4j;
-
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class DateUtil {
 
   public static final DateTimeFormatter DATETIME_FORMAT
-          = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+      = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
   public static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ISO_LOCAL_DATE;
   public static final DateTimeFormatter TIME_FORMAT = DateTimeFormatter.ISO_LOCAL_TIME;
 
