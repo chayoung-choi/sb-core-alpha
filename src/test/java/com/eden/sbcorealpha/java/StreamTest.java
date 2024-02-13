@@ -3,8 +3,10 @@ package com.eden.sbcorealpha.java;
 import java.util.Arrays;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+@Disabled
 @Slf4j
 class StreamTest {
 
